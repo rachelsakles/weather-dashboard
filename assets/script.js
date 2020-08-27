@@ -1,17 +1,4 @@
 
-//HTML variables
-//const input = document.getElementById("city-input");
-//var searchBtn = document.getElementById("search-button");
-//const clear = document.getElementById("clear-history");
-//const temp = document.getElementById("temperature");
-//const humidity = document.getElementById("humidity");
-//const wind = document.getElementById("wind-speed");
-//const uv = document.getElementById("UV-index");
-//const history = document.getElementById("history");
-//const cityName = document.getElementById("city-name"); 
-//let queryURL = "https://api.openweathermap.org/data/2.5/weather?q=tucson" + "&appid=6b46cc3d569c821c8b56b2b6152697d7";
-//let searchTerm = ""; 
-
 //var cities = []
 //var searchValue = "Scottsdale"
 //var searchURL = "http://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=6b46cc3d569c821c8b56b2b6152697d7&units=imperial"
@@ -50,17 +37,7 @@ $(document).ready(function () {
 
     })
 })
-// // function pageLoad() {
-// //     var storedCities = JSON.parse(localStorage.getItem("cities"));
-// //     if (storedCities !== null) {
-// //         cities = storedCities;
-// //         index = storedCities.length - 1
-// //         city = storedCities[index]
-// //     }
 
-// }
-
-// Retrieve data from local storage 
 
 
 // Grab data from search weather
@@ -162,6 +139,5 @@ function getFiveDay(searchValue) {
     })
 }
 
-// Store saved cities in history 
 // Clear history 
 
