@@ -27,9 +27,9 @@ $(document).ready(function () {
         //clear input box 
         //$("#search-value").val(" "); 
         $(searchValue).val(" ");
-        $("#city-input").val(" ");
+        //$("#city-input").val(" ");
         searchWeather(searchValue);
-        searchHistory(searchValue);   
+        searchHistory(searchValue); 
         
 
         //pageLoad();
@@ -113,7 +113,8 @@ function getFiveDay(searchValue) {
         method: "GET"
     }).then(function (response) {
         var five = response.list;
-        //console.log(five);
+        //console.log(five); 
+        $("#5-day").empty(); 
         for (var i = 4; i < five.length; i = i + 8) { 
             // Creating a div
             var fiveDayDiv = $("<div class='card shadow-lg text-white bg-primary mx-auto mb-10 p-2' style='width: 8.5rem; height: 11rem;'>");
@@ -133,6 +134,7 @@ function getFiveDay(searchValue) {
             //$('#5-day').append(h5date).append(pTemp).append(pHum)  
             fiveDayDiv.append(h5date, $fdIcon , pTemp, pHum ); 
             $("#5-day").append(fiveDayDiv); 
+            
             
            
         }
