@@ -43,7 +43,7 @@ $(document).ready(function () {
 // Grab data from search weather
 function searchWeather(searchValue) {
     $.ajax({
-        url: "http://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=6b46cc3d569c821c8b56b2b6152697d7&units=imperial",
+        url: "https://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=6b46cc3d569c821c8b56b2b6152697d7&units=imperial",
         method: "GET"
     })
         .then(function (response) {
@@ -78,7 +78,7 @@ function searchWeather(searchValue) {
 // Grab UV data
 function getUvIndex(lat, lon) {
     $.ajax({
-        url: "http://api.openweathermap.org/data/2.5/uvi?appid=6b46cc3d569c821c8b56b2b6152697d7" + "&lat=" + lat + "&lon=" + lon,
+        url: "https://api.openweathermap.org/data/2.5/uvi?appid=6b46cc3d569c821c8b56b2b6152697d7" + "&lat=" + lat + "&lon=" + lon,
         method: "GET"
     }).then(function (response) {
         var UVindex = response.value
